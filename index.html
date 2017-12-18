@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Start page</title>
+	<link href="css/nodemcu_css.css" rel="stylesheet">
+	<style type="text/css">
+		.m {
+			background-color: darkgray;
+			border-radius: 0.5em;
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+		}
+
+		pre {
+			margin-top: 2em;
+			margin-bottom: 2em;
+		}
+
+		.cont-flu {
+			margin-top: 5em;
+		}
+	</style>
+</head>
+
+<body>
+
+	<ul class="nav fix" id="myTopnav">
+		<li><a href="/" class="brand">NodeMCU</a></li>
+		<li><a href="#grid">Grid</a></li>
+		<li><a href="#nav">Navigation</a></li>
+		<li><a href="#form">Forms and button</a></li>
+		<li><a href="#modal">Modal box</a></li>
+		<li><a href="#progbar">Progress Bar</a></li>
+		<li><a href="#tab">Tables</a></li>
+
+		<li class="-icon"><a href="javascript:void(0);" onclick="myFunction()">☰</a></li>
+	</ul>
+
+	<div id="myModal" class="modal">
+		<div class="m-cont">
+			<span class="close" id="close_m">&times;</span>
+			<div class="m-body">
+				<p>Сохранить настройки?</p>
+			</div>
+			<div class="m-foo">
+				<button id="save_m" class="success">Yes</button>
+				<button id="close" class="danger">No</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="cont-flu">
+		<div class="row">
+			<div class="xs-12 sm-2 lg-2">
+			</div>
+			<div class="xs-12 sm-10 lg-9">
+				<a name="grid"><br/><br/></a>
+				<h1>Grid</h1>
+				<div class="row">
+					<div class="xs-12">
+						Разметка включает в себя адаптивную систему разметки, которая масштабируется до 12 столбцов. <br>
+						<b>.row</b> должны быть помещены в <b>.cont</b> (fixed-width) или <b>.cont-flu</b> (full-width) для правильного выравнивания и заполнения <br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="xs-12">
+						<table>
+							<thead>
+								<tr>
+									<th></th>
+									<th>Телефоны ( &lt;768px)</th>
+									<th>Планшеты (≥768px)</th>
+									<th>Настольные (≥1200px)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Класс</td>
+									<td>.xs-</td>
+									<td>.sm-</td>
+									<td>.lg-</td>
+								</tr>
+								<tr>
+									<td>Колонок</td>
+									<td>12</td>
+									<td>12</td>
+									<td>12</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row">
+					<div class="xs-10 xs-of-2 m">xs-10 xs-of-2</div>
+				</div>
+				<div class="row">
+					<div class="xs-3 m">.xs-3</div>
+					<div class="xs-3 m">.xs-3</div>
+					<div class="xs-3 m">.xs-3</div>
+					<div class="xs-3 m">.xs-3</div>
+				</div>
+
+				<div class="row">
+					<div class="xs-12">
+						<pre class="grey">
+  &lt;div class="row"&gt;
+    &lt;div class="xs-10 xs-of-2"&gt;.xs-10 .xs-of-2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+   &lt;div class="xs-3"&gt;.xs-3&lt;/div&gt;
+   &lt;div class="xs-3"&gt;.xs-3&lt;/div&gt;
+   &lt;div class="xs-3"&gt;.xs-3&lt;/div&gt;
+   &lt;div class="xs-3"&gt;.xs-3&lt;/div&gt;
+  &lt;/div&gt;
+            </pre>
+					</div>
+
+				</div>
+
+
+
+				<div class="row">
+					<div class="xs-1 m">.xs-1</div>
+					<div class="xs-11 m">.xs-11</div>
+				</div>
+				<div class="row">
+					<div class="xs-2 m">.xs-2</div>
+					<div class="xs-10 m">.xs-10</div>
+				</div>
+				<div class="row">
+					<div class="xs-3 m">.xs-3</div>
+					<div class="xs-9 m">.xs-9</div>
+				</div>
+				<div class="row">
+					<div class="xs-4 m">.xs-4</div>
+					<div class="xs-4 m xs-of-4">.xs-4 .xs-of-4</div>
+				</div>
+				<div class="row">
+					<div class="xs-5 xs-of-3 m">.xs-5 .xs-of-3</div>
+					<div class="xs-4 m">.xs-4</div>
+				</div>
+				<div class="row">
+					<div class="xs-6 m">.xs-6</div>
+				</div>
+				<div class="row">
+					<div class="xs-7 m">.xs-7</div>
+				</div>
+				<div class="row">
+					<div class="xs-8 m">.xs-8</div>
+				</div>
+				<div class="row">
+					<div class="xs-9 m">.xs-9</div>
+				</div>
+				<div class="row">
+					<div class="xs-10 m">.xs-10</div>
+				</div>
+				<div class="row">
+					<div class="xs-11 m">.xs-11</div>
+				</div>
+				<div class="row">
+					<div class="xs-12 m">.xs-12</div>
+				</div>
+
+
+				<div class="row">
+					<div class="xs-12">
+						<pre class="grey">
+
+  &lt;div class="row"&gt;
+    &lt;div class="xs-1"&gt;.xs-1&lt;/div&gt;
+    &lt;div class="xs-11"&gt;.xs-11&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="xs-2"&gt;.xs-2&lt;/div&gt;
+    &lt;div class="xs-10"&gt;.xs-10&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="xs-3"&gt;.xs-3&lt;/div&gt;
+    &lt;div class="xs-9"&gt;.xs-9&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="xs-4"&gt;.xs-4&lt;/div&gt;
+    &lt;div class="xs-4 xs-of-4"&gt;.xs-4 .xs-of-4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="xs-5 xs-of-3"&gt;.xs-5 .xs-of-3&lt;/div&gt;
+    &lt;div class="xs-4"&gt;.xs-4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="xs-6"&gt;.xs-6&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="xs-7"&gt;.xs-7&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="xs-8"&gt;.xs-8&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="xs-9"&gt;.xs-9&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="xs-10"&gt;.xs-10&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="xs-11"&gt;.xs-11&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="xs-12"&gt;.xs-12&lt;/div&gt;
+  &lt;/div&gt;
+            </pre>
+					</div>
+				</div>
+
+
+				<h2>Телефоны (.xs-), планшеты(.sm-), настольные(.lg-)</h2>
+
+				<div class="row">
+					<div class="xs-10 xs-of-2 sm-8 sm-of-0 lg-6 lg-of-4 m">.xs-10 .xs-of-2 .sm-8 .sm-of-0 .lg-6 .lg-of-4</div>
+				</div>
+				<div class="row">
+					<div class="xs-12 sm-6 lg-3 m">.xs-12 .sm-6 .lg-3</div>
+					<div class="xs-12 sm-6 lg-3 m">.xs-12 .sm-6 .lg-3</div>
+					<div class="xs-12 sm-6 lg-3 m">.xs-12 .sm-6 .lg-3</div>
+					<div class="xs-12 sm-6 lg-3 m">.xs-12 .sm-6 .lg-3</div>
+				</div>
+
+				<pre class="grey">
+  &lt;div class="row"&gt;
+    &lt;div class="xs-10 xs-of-2"&gt;.xs-10 .xs-of-2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+   &lt;div class="xs-12 sm-6 lg-3"&gt;.xs-12 .sm-6 .lg-3&lt;/div&gt;
+   &lt;div class="xs-12 sm-6 lg-3"&gt;.xs-12 .sm-6 .lg-3&lt;/div&gt;
+   &lt;div class="xs-12 sm-6 lg-3"&gt;.xs-12 .sm-6 .lg-3&lt;/div&gt;
+   &lt;div class="xs-12 sm-6 lg-3"&gt;.xs-12 .sm-6 .lg-3&lt;/div&gt;
+  &lt;/div&gt;
+            </pre>
+
+
+				<h2>Вложенные столбцы</h2>
+
+				<div class="row">
+					<div class="xs-12 m grey" style="padding: 1em">
+						Level 1: .xs-12
+						<div class="row">
+							<div class="xs-6 m">Level 2: .xs-6</div>
+							<div class="xs-6 m">Level 2: .xs-6</div>
+						</div>
+					</div>
+				</div>
+
+				<pre class="grey">
+  &lt;div class="row"&gt;
+   &lt;div class="xs-12"&gt;
+    &lt;div class="row"&gt;
+     &lt;div class="xs-6"&gt;&lt;/div&gt;
+     &lt;div class="xs-6"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+</pre>
+				<a name="nav"><br/><br/></a>
+				<h1>Navigation</h1>
+				<div class="row">
+					<div class="xs-12">
+						<ul class="nav" id="my_nav">
+							<li><a href="#" class="brand">NodeMCU</a></li>
+							<li class="drop">
+								<a href="#">Settings</a>
+								<div class="drop-cont">
+									<a href="#">setting 1</a>
+									<a href="#">setting 2</a>
+								</div>
+							</li>
+							<li><a href="#">Info</a></li>
+							<!--			<li style="float:right;"><a href="#">Right</a></li>-->
+							<li class="-icon">
+								<a href="javascript:void(0);" onclick="my_nav_func()">☰</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="xs-12">
+						<pre class="grey">
+  &lt;ul class="nav" id="my_nav"&gt;
+    &lt;li&gt;&lt;a href="#" class="brand"&gt;NodeMCU&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="drop"&gt;
+      &lt;a href="#"&gt;Settings&lt;/a&gt;
+      &lt;div class="drop-cont"&gt;
+        &lt;a href="#"&gt;setting 1&lt;/a&gt;
+        &lt;a href="#"&gt;setting 2&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Info&lt;/a&gt;&lt;/li&gt;
+        &lt;li style="float:right;"&gt;&lt;a href="#"&gt;Right&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="-icon"&gt;
+      &lt;a href="javascript:void(0);" onclick="my_nav_func"&gt;☰&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;!--
+   Navbar fix
+   &lt;ul class="nav fix" id="my_nav"&gt;
+    ...
+   &lt;/ul&gt;
+  --&gt;
+
+  &lt;script&gt;
+  function my_nav_func() {
+   var nav = document.getElementById("my_nav");
+   if (nav.classList.contains("res")) {
+    nav.classList.remove('res');
+   } else {
+    nav.classList.add('res');
+   }
+  }
+  &lt;/script&gt;
+</pre>
+					</div>
+				</div>
+				<script>
+					function my_nav_func() {
+						var nav = document.getElementById("my_nav");
+						if (nav.classList.contains("res")) {
+							nav.classList.remove('res');
+						} else {
+							nav.classList.add('res');
+						}
+					}
+				</script>
+				<a name="form"><br><br></a>
+				<h1>Forms and buttons</h1>
+				<br>
+				<div class="row">
+					<div class="xs-12">
+						<div class="group">
+							<div class="search">
+								<input id="wifi_id" value="Web server" required="" type="text" name="wifi_id">
+								<label for="wifi_id">Имя (SSID):</label>
+								<input id="search" type="submit" value="Поиск" onclick="search()">
+								<ul id="list" style="display:none;">
+									<li>1 list</li>
+									<li>2 list</li>
+									<li>3 list</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					function search() {
+						if (document.getElementById('list').style.display == 'none') {
+							document.getElementById('list').style.display = 'block';
+							document.getElementById('search').value = 'X';
+						} else {
+							document.getElementById('list').style.display = 'none';
+							document.getElementById('search').value = 'Поиск';
+						}
+					}
+				</script>
+				<pre class="grey">
+  &lt;div class="group"&gt;
+   &lt;div class="search"&gt;
+    &lt;input id="wifi_id" value="Web server" required="" type="text" name="wifi_id"&gt;
+    &lt;label for="wifi_id"&gt;Имя (SSID):&lt;/label&gt;
+    &lt;input id="search" type="submit" value="Поиск" onclick="search()"&gt;
+    &lt;ul id="list" style="display:none;"&gt;
+     &lt;li&gt;1 list&lt;/li&gt;
+     &lt;li&gt;2 list&lt;/li&gt;
+     &lt;li&gt;3 list&lt;/li&gt;
+    &lt;/ul&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;script&gt;
+   function search(){
+    if (document.getElementById('list').style.display=='none'){
+     document.getElementById('list').style.display='block'
+     document.getElementById('search').value='X'
+    }else{
+     document.getElementById('list').style.display='none'
+     document.getElementById('search').value='Поиск'
+   	}
+   }
+ &lt;/script&gt;
+</pre>
+				<br>
+				<div class="row">
+					<div class="xs-4">
+						<div class="group">
+							<input checked type="radio" name="flash" value="on" onchange="check()" id="on">
+							<label for="on">Вкл</label>
+							<input type="radio" name="flash" value="off" onchange="check()" id="off">
+							<label for="off">Выкл</label><i>Подсветка ступени :</i>
+						</div>
+					</div>
+					<div class="xs-4 xs-of-4">
+						<div class="group">
+							<select id="wifi_mode" onchange="check_s()" name="wifi_mode">
+							<option value="off">Выключить</option>
+							<option selected value="ST">Wireless client</option>
+							<option value="AP">Access point</option></select>
+						</div>
+					</div>
+				</div>
+				<script>
+					function check_rad(val) {
+						var inp = document.getElementsByName(val);
+						for (var i = 0; i < inp.length; i++) {
+							if (inp[i].type == "radio" && inp[i].checked) {
+								return inp[i].value;
+							}
+						}
+					}
+
+					function check() {
+						var radio_val = check_rad("flash");
+						alert(radio_val)
+					}
+
+					function check_sel(val) {
+						var s = document.getElementById(val);
+						for (var i = 0; i < s.options.length; i++) {
+							if (s.options[i].selected) {
+								return s.options[i].value
+							}
+						}
+					}
+
+					function check_s() {
+						var val = check_sel("wifi_mode");
+						alert(val)
+					}
+				</script>
+
+
+				<pre class="grey">
+  &lt;div class="group"&gt;
+    &lt;input checked type="radio" name="flash" value="on" id="on"&gt;
+    &lt;label for="on"&gt;Вкл&lt;/label&gt;
+    &lt;input type="radio" name="flash" value="off" id="off"&gt;
+    &lt;label for="off"&gt;Выкл&lt;/label&gt;&lt;i&gt;Подсветка ступени :&lt;/i&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Обработка "radio"--&gt;
+  &lt;script&gt;
+  function check_rad(val) {
+   var inp = document.getElementsByName(val);
+   for (var i = 0; i &lt; inp.length; i++) {
+    if (inp[i].type == "radio" && inp[i].checked) {
+    return inp[i].value;
+   }
+  }
+ }
+  var radio_val = check_rad("flash") // radio_val = "on"
+  &lt;/script&gt;
+
+    &lt;div class="group"&gt;
+     &lt;select id="wifi_mode" name="wifi_mode"&gt;
+      &lt;option  value="off"&gt;Выключить&lt;/option&gt;
+      &lt;option  selected value="st"&gt;Wireless client&lt;/option&gt;
+      &lt;option  value="ap"&gt;Access point&lt;/option&gt;
+     &lt;/select&gt;
+    &lt;/div&gt;
+
+  &lt;!-- Обработка "select"--&gt;
+  &lt;script&gt;
+   function check_sel(val) {
+    var s = document.getElementById(val);
+    for (var i = 0; i &lt; s.options.length; i++) {
+     if (s.options[i].selected) {
+     return s.options[i].value
+    }
+   }
+  }
+  var select_val = check_sel("wifi_mode") // select_val = "st"
+
+  &lt;/script&gt;
+
+</pre>
+				<br>
+				<div class="row">
+					<div class="xs-4">
+						<div class="group">
+							<input type="number" id="num" name="number" required="" min="0" max="255" value="">
+							<label for="num">Number</label>
+						</div>
+					</div>
+					<div class="xs-4">
+						<div class="group">
+							<input type="text" id="text" name="text" required="" value="">
+							<label for="text">Text</label>
+						</div>
+					</div>
+					<div class="xs-4">
+						<div class="group">
+							<input type="password" id="pass" name="password" required="" value="">
+							<label for="pass">Password</label>
+						</div>
+					</div>
+				</div>
+
+				<pre class="grey">
+  &lt;div class="group"&gt;
+   &lt;input type="number" name="number" required="" min="0" max="255" value=""&gt;
+   &lt;label for="number"&gt;Number&lt;/label&gt;
+  &lt;/div&gt;
+
+  &lt;div class="group"&gt;
+   &lt;input id="input_text" type="text" name="text" required="" value=""&gt;
+   &lt;label for="text"&gt;Text&lt;/label&gt;
+  &lt;/div&gt;
+
+  &lt;div class="group"&gt;
+   &lt;input type="password" name="password" required="" value=""&gt;
+   &lt;label for="password"&gt;Password&lt;/label&gt;
+  &lt;/div&gt;
+
+   &lt;script&gt;
+   //Получить значение поле input по name
+   var val_name = document.getElementsByName("number")[0].value
+   //или по id
+   var val_id = document.getElementById("input_text").value
+  &lt;/script&gt;
+<br>
+</pre>
+				<div class="row">
+					<div class="xs-6">
+						<div class="group">
+							<input type="color" id="rbg" name="rbg" value="#ff0000">
+							<label for="rbg">Выбрать цвет :</label>
+						</div>
+					</div>
+				</div>
+				<pre class="grey">
+  &lt;div class="group"&gt;
+   &lt;input type="color" id="rbg" name="rbg" value="#ff0000"&gt;
+   &lt;label for="rbg"&gt;Выбрать цвет :&lt;/label&gt;
+  &lt;/div&gt;
+</pre>
+
+				<br>
+				<div class="row">
+					<div class="xs-12">
+						<div class="group">
+							<button>button</button>
+							<button class="grey" id="btn_one">click_me</button>
+							<button class="success">button</button>
+							<button class="warning round">button</button>
+							<button class="info round small">button </button>
+							<button class="purple small">small</button>
+							<button class="primary large">large</button>
+						</div>
+					</div>
+				</div>
+				<script>
+					el = document.getElementById("btn_one");
+					el.addEventListener("click", function() {
+						el.innerHTML = "Ура"
+					}, false);
+				</script>
+				<pre class="grey">
+  &lt;button&gt;button&lt;/button&gt;
+  &lt;button class="grey" id="btn_one"&gt;click_me&lt;/button&gt;
+  &lt;button class="success"&gt;button&lt;/button&gt;
+  &lt;button class="warning round"&gt;button&lt;/button&gt;
+  &lt;button class="info round small"&gt;button &lt;/button&gt;
+  &lt;button class="purple small"&gt;small&lt;/button&gt;
+  &lt;button class="primary large"&gt;large&lt;/button&gt;
+
+  &lt;script&gt;
+   el = document.getElementById("btn_one");
+   el.addEventListener("click", function(){
+    el.innerHTML = "Ура"
+   }, false);
+  &lt;/script&gt;
+</pre>
+				<br>
+				<a name="alert"></a>
+				<h1>Alerts</h1>
+				<div class="row">
+					<div class="xs-12">
+						<div class="alert purple">
+							Простое статическое сообщение.
+						</div>
+						<pre class="grey">
+  &lt;div class="alert purple"&gt;
+    Простое статическое сообщение.
+  &lt;/div&gt;
+    </pre>
+						<br>
+						<div class="alert danger">
+							<span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+							<strong>Danger!</strong> Ошибка не хватает памяти.
+						</div>
+
+						<div class="alert info">
+							<span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+							<strong>Info!</strong>Неправильный логин или пароль.
+						</div>
+						<pre class="grey">
+
+  &lt;div class="alert info"&gt;
+    &lt;span class="close" onclick="this.parentElement.style.display='none';"&gt;&times;&lt;/span&gt;
+    &lt;strong&gt;Info!&lt;/strong&gt;Неправильный логин или пароль.
+  &lt;/div&gt;
+
+    </pre>
+					</div>
+				</div>
+				<a name="modal"><br/><br/></a>
+				<h1>Modal box</h1>
+				<div class="row">
+					<div class="xs-12">
+						<div class="group">
+							<button class="primary" id="btn_modal">Open Modal</button>
+						</div>
+						<br>
+						<pre class="grey">
+
+  &lt;div class="group"&gt;
+    &lt;button id="btn_modal">Open Modal&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div id="myModal" class="modal"&gt;
+   &lt;div class="m-cont"&gt;
+    &lt;span class="close" id="close_m"&gt;&times;&lt;/span&gt;
+    &lt;div class="m-body"&gt;
+     &lt;p&gt;Сохранить настройки?&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="m-foo"&gt;
+     &lt;button id="save_m" class="success"&gt;Yes&lt;/button&gt;
+     &lt;button id="close" class="danger"&gt;No&lt;/button&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;script&gt;
+   var modal = document.getElementById('myModal');
+   var btn = document.getElementById("btn_modal");
+   var close_m = document.getElementById("close_m");
+
+   btn.onclick = function() {
+    modal.style.opacity = "1";
+    modal.style.display = "block";
+   }
+   close_m.onclick = function() {
+    modal.style.opacity = "0";
+    setTimeout(function() {
+      modal.style.display = "none";
+    }, 600);
+   }
+  &lt;/script&gt;
+
+</pre>
+					</div>
+				</div>
+				<a name="progbar"><br/><br/></a>
+				<h1>Progress Bar</h1>
+
+				<div class="progbar">
+					<div class="bar" style="width:20%">
+						<div class="label">20%</div>
+					</div>
+				</div>
+				<br>
+				<div class="progbar">
+					<div class="bar danger" style="width:50%">
+						<div class="label">50%</div>
+					</div>
+				</div>
+				<br>
+				<div class="progbar">
+					<div class="bar purple" style="width:80%">
+						<div class="label">80%</div>
+					</div>
+				</div>
+
+
+				<pre class="grey">
+  &lt;div class="progbar"&gt;
+   &lt;div class="bar" style="width:20%"&gt;
+    &lt;div class="label"&gt;20%&lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;div class="progbar"&gt;
+   &lt;div class="bar danger" style="width:50%"&gt;
+    &lt;div class="label"&gt;50%&lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;div class="progbar"&gt;
+   &lt;div class="bar purple" style="width:80%"&gt;
+    &lt;div class="label"&gt;80%&lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+</pre>
+				<a name="tab"><br/><br/></a>
+				<h1>Tables</h1>
+
+				<div class="row">
+					<div class="xs-12">
+						<table>
+							<thead>
+								<tr>
+									<th>№</th>
+									<th>ChipID</th>
+									<th>FlashID</th>
+									<th>FS Total (byte)</th>
+									<th>FS Used (byte)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>b517900</td>
+									<td>1640ef00</td>
+									<td>3400046</td>
+									<td>47188</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>a325540</td>
+									<td>4585ff40</td>
+									<td>3400046</td>
+									<td>20456</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<pre class="grey">
+		&lt;table&gt;
+   &lt;thead&gt;
+    &lt;tr&gt;
+     &lt;th&gt;№&lt;/th&gt;
+     &lt;th&gt;ChipID&lt;/th&gt;
+     &lt;th&gt;FlashID&lt;/th&gt;
+     &lt;th&gt;FS Total (byte)&lt;/th&gt;
+     &lt;th&gt;FS Used (byte)&lt;/th&gt;
+    &lt;/tr&gt;
+   &lt;/thead&gt;
+   &lt;tbody&gt;
+    &lt;tr&gt;
+     &lt;td&gt;1&lt;/td&gt;
+     &lt;td&gt;b517900&lt;/td&gt;
+     &lt;td&gt;1640ef00&lt;/td&gt;
+     &lt;td&gt;3400046&lt;/td&gt;
+     &lt;td&gt;47188&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+     &lt;td&gt;2&lt;/td&gt;
+     &lt;td&gt;a325540&lt;/td&gt;
+     &lt;td&gt;4585ff40&lt;/td&gt;
+     &lt;td&gt;3400046&lt;/td&gt;
+     &lt;td&gt;20456&lt;/td&gt;
+    &lt;/tr&gt;
+   &lt;/tbody&gt;
+  &lt;/table&gt;
+	</pre>
+
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.classList.contains("res")) {
+				x.classList.remove('res');
+			} else {
+				x.classList.add('res');
+			}
+		}
+	</script>
+
+
+	<script>
+		var modal = document.getElementById('myModal');
+		var close_m = document.getElementById("close_m");
+		var btn_modal = document.getElementById("btn_modal");
+
+		btn_modal.onclick = function() {
+			modal.style.opacity = "1";
+			modal.style.display = "block";
+		};
+		close_m.onclick = function() {
+			modal.style.opacity = "0";
+			setTimeout(function() {
+				modal.style.display = "none";
+			}, 600);
+		};
+	</script>
+
+</body>
+
+</html>
