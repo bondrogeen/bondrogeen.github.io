@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Start page</title>
-	<link href="nodemcu-css.css" rel="stylesheet">
+	<link href="https://raw.githubusercontent.com/bondrogeen/nodemcu-css/master/nodemcu-css.css" rel="stylesheet">
 	<style type="text/css">
 		.m {
 			background-color: darkgray;
@@ -391,13 +391,23 @@
 				<div class="row">
 					<div class="xs-4">
 						<div class="group">
-							<input checked type="radio" name="flash" value="on" onchange="check()" id="on">
+							<input checked type="radio" name="flash" value="on" onchange="save(this.name,this.value)" id="on">
 							<label for="on">Вкл</label>
-							<input type="radio" name="flash" value="off" onchange="check()" id="off">
+							<input type="radio" name="flash" value="off" onchange="save(this.name,this.value)" id="off">
 							<label for="off">Выкл</label><i>Подсветка ступени :</i>
 						</div>
 					</div>
-					<div class="xs-4 xs-of-4">
+				<div class="xs-4">
+						<div class="group three">
+							<input checked type="radio" name="switch" value="1" onchange="save(this.name,this.value)" id="s_1">
+							<label for="s_1">1</label>
+							<input type="radio" name="switch" value="2" onchange="save(this.name,this.value)" id="s_2">
+							<label for="s_2">2</label>
+							<input type="radio" name="switch" value="3" onchange="save(this.name,this.value)" id="s_3">
+							<label for="s_3">3</label>
+						</div>
+					</div>
+					<div class="xs-4">
 						<div class="group">
 							<select id="wifi_mode" onchange="check_s()" name="wifi_mode">
 							<option value="off">Выключить</option>
@@ -416,10 +426,9 @@
 						}
 					}
 
-					function check() {
-						var radio_val = check_rad("flash");
-						alert(radio_val)
-					}
+    function test(name, val) {
+      alert(name + " " + val)
+    }
 
 					function check_sel(val) {
 						var s = document.getElementById(val);
