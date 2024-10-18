@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" />
+
+    <title>About</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="minimum-scale=1, initial-scale=1, maximum-scale=1.0, width=device-width, shrink-to-fit=no" />
+
+    <style type="text/css">
+      .drawer {
+        display: none;
+      }
+    </style>
+    <link href="assets/css/index.css" rel="stylesheet" />
+    <script src="assets/js/common.js" defer="defer"></script>
+    
+<!-- load specific page style -->
+<link href="assets/css/home.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__logo">
+        <img src="assets/img/logo.cea8fa0c.png" alt="" />
+      </div>
+      <div class="header__search">
+        <div class="header-search d-none d-xl-flex">
+          <svg class="header-search__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.33325 3.33325H13.3333" stroke="black" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round" />
+            <path d="M9.33325 5.33325H11.3333" stroke="black" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round" />
+            <path
+              d="M13.9999 7.66659C13.9999 11.1666 11.1666 13.9999 7.66659 13.9999C4.16659 13.9999 1.33325 11.1666 1.33325 7.66659C1.33325 4.16659 4.16659 1.33325 7.66659 1.33325"
+              stroke="black"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M14.6666 14.6666L13.3333 13.3333" stroke="black" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round" />
+          </svg>
+          <input class="header-search__input" type="text" placeholder="Введите артикул или OEM..." />
+          <button class="header-search__button">Найти</button>
+        </div>
+      </div>
+      <div class="header-call d-none d-lg-flex">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+          <path
+            d="M13.5625 5.45107C12.9844 5.67763 12.3906 6.27138 12.1719 6.86513C12.0469 7.19326 12 7.49013 12 7.97451V8.63076L19.4453 8.65419L26.8828 8.67763L27.4531 8.88857C27.7656 8.99794 28.1953 9.20107 28.4062 9.34169C29.2188 9.86513 29.9375 10.8651 30.2109 11.8417C30.2891 12.1073 30.3203 14.1386 30.3359 20.2011L30.3672 28.2089L32.1406 29.9901C33.1172 30.9745 34.0078 31.8261 34.125 31.8886C34.4766 32.0683 34.8516 32.0292 35.1406 31.7714L35.3984 31.5448L35.4219 29.2792L35.4453 27.0136L36.1641 26.9823C36.7578 26.9589 36.9688 26.912 37.3359 26.7401C37.875 26.4745 38.3516 25.9511 38.5625 25.3886C38.7188 24.9667 38.7188 24.8183 38.7188 16.1386C38.7188 7.45888 38.7188 7.31044 38.5625 6.88857C38.3516 6.32607 37.875 5.80263 37.3281 5.53701L36.8828 5.31826L25.4375 5.30263L13.9922 5.28701L13.5625 5.45107ZM35.5312 11.2167C36.1406 11.3886 36.3281 12.0214 35.9141 12.4823L35.6875 12.7401H34.1094H32.5312L32.3047 12.4823C31.9062 12.037 32.0781 11.3886 32.6484 11.2245C32.9922 11.1229 35.1797 11.1229 35.5312 11.2167ZM35.7109 15.4511C35.9375 15.5526 36.1406 15.8808 36.1406 16.1386C36.1406 16.3964 35.9375 16.7245 35.7109 16.8261C35.5781 16.8886 35.0312 16.9198 34.1094 16.9198C32.5859 16.9198 32.375 16.8729 32.1875 16.5214C31.9844 16.1229 32.1094 15.6698 32.4766 15.4667C32.7266 15.3261 35.4141 15.3183 35.7109 15.4511ZM35.9141 19.7948C36.3281 20.2558 36.1406 20.8886 35.5312 21.0604C35.1562 21.162 33.0625 21.162 32.6875 21.0604C32.3281 20.9589 32.0781 20.6542 32.0781 20.3183C32.0781 20.037 32.3203 19.6776 32.5781 19.5683C32.6641 19.537 33.4062 19.5136 34.2109 19.5214L35.6875 19.537L35.9141 19.7948Z"
+            fill="#F29100" />
+          <path
+            d="M3.5625 10.451C2.98438 10.6776 2.39062 11.2713 2.17188 11.8651L2 12.3182V21.1385C2 29.8182 2 29.9667 2.15625 30.3885C2.36719 30.951 2.84375 31.4745 3.38281 31.7401C3.75 31.912 3.96094 31.9588 4.55469 31.9823L5.27344 32.0135L5.29688 34.2792L5.32031 36.5448L5.57812 36.7713C5.85156 37.0135 6.24219 37.0682 6.55469 36.912C6.64844 36.8651 7.8125 35.7401 9.14844 34.412L11.5703 31.9979L19.2266 31.9823L26.8828 31.9588L27.3281 31.7401C27.875 31.4745 28.3516 30.951 28.5625 30.3885C28.7188 29.9667 28.7188 29.8182 28.7188 21.1385C28.7188 12.4588 28.7188 12.3104 28.5625 11.8885C28.3516 11.326 27.875 10.8026 27.3281 10.537L26.8828 10.3182L15.4375 10.3026L3.99219 10.287L3.5625 10.451ZM16.3359 16.3495C17.5938 16.7245 18.5312 17.9198 18.6172 19.2479C18.6875 20.2323 18.3672 21.0838 17.6641 21.787C17.3281 22.1307 16.4922 22.6229 16.2656 22.6229C16.1797 22.6229 16.1406 22.6932 16.1406 22.8651C16.1406 23.2323 15.7734 23.5604 15.3594 23.5604C15.1016 23.5604 14.9844 23.5135 14.8047 23.3338C14.5859 23.1151 14.5781 23.076 14.5781 22.3885C14.5781 21.7088 14.5859 21.662 14.7969 21.451C14.9609 21.2948 15.1328 21.2167 15.4062 21.1776C15.9688 21.1073 16.3516 20.912 16.6484 20.5682C17.3047 19.8104 17.1484 18.6463 16.3125 18.0526C16 17.8417 15.9141 17.8182 15.3594 17.8182C14.8047 17.8182 14.7188 17.8417 14.4062 18.0526C13.9922 18.3495 13.7266 18.8104 13.6641 19.3495C13.5938 19.9198 13.3125 20.2401 12.8594 20.2401C12.5859 20.2401 12.4922 20.1932 12.2969 19.9745C12.0625 19.7167 12.0625 19.6854 12.1016 19.1542C12.2266 17.7167 13.4531 16.4198 14.875 16.2245C15.4141 16.1542 15.8125 16.1854 16.3359 16.3495ZM15.9297 24.8104C16.2266 25.1385 16.2188 25.5292 15.9141 25.8338C15.2344 26.5057 14.1562 25.5995 14.7422 24.8573C15.0781 24.4354 15.5625 24.412 15.9297 24.8104Z"
+            fill="#F29100" />
+        </svg>
+        <div class="header-call__wrapper">
+          <div class="header-call__tel">+7 (800) 100-53-54</div>
+          <a href="#" class="header-call__link fw-500"> заказать звонок</a>
+        </div>
+      </div>
+      <button class="header__burger">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M5 10H35V13.3333H5V10ZM5 18.3333H35V21.6667H5V18.3333ZM5 26.6667H35V30H5V26.6667Z"
+            fill="black" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav">
+  <div class="container">
+    <nav class="nav__wrapper">
+      <ul class="nav__list">
+        <li class="nav__item nav__item--catalog">
+          <a class="nav__link d-flex gap-3" href="catalog.html">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M18.3333 6.89175V3.52508C18.3333 2.20008 17.8 1.66675 16.475 1.66675H13.1083C11.7833 1.66675 11.25 2.20008 11.25 3.52508V6.89175C11.25 8.21675 11.7833 8.75008 13.1083 8.75008H16.475C17.8 8.75008 18.3333 8.21675 18.3333 6.89175Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M8.75008 7.10008V3.31675C8.75008 2.14175 8.21675 1.66675 6.89175 1.66675H3.52508C2.20008 1.66675 1.66675 2.14175 1.66675 3.31675V7.09175C1.66675 8.27508 2.20008 8.74175 3.52508 8.74175H6.89175C8.21675 8.75008 8.75008 8.27508 8.75008 7.10008Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M8.75008 16.475V13.1083C8.75008 11.7833 8.21675 11.25 6.89175 11.25H3.52508C2.20008 11.25 1.66675 11.7833 1.66675 13.1083V16.475C1.66675 17.8 2.20008 18.3333 3.52508 18.3333H6.89175C8.21675 18.3333 8.75008 17.8 8.75008 16.475Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M12.5 12.9167H17.5" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M12.5 16.25H17.5" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+            <span> Каталог Продукции</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            <span> О нас</span>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M9.5 4.5L6.01841 7.98159L2.53683 4.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item nav__item--show">
+          <a class="nav__link" href="#">Подбор</a>
+        </li>
+        <li class="nav__item nav__item--show">
+          <a class="nav__link" href="#">Бесплатный тест-драйв</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Стать партнером</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Блог</a>
+        </li>
+        <li class="nav__item nav__item--show">
+          <a class="nav__link" href="#">Где купить Sonder?</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+</header>
+
+
+    <!-- Main content -->
+    <main class="main">
+
+<div class="page page-home">
+  <div class="container"></div>
+</div>
+
+</main>
+
+    <!-- Footer -->
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__order-call"><div class="footer-order-call">
+  <div class="footer-order-call__wrapper">
+    <h4 class="footer-order-call__title">Заказать звонок</h4>
+    <p class="footer-order-call__text">Укажите свой телефон и мы перезвоним в ближайшее время</p>
+    <form action="#">
+      <div class="footer-order-call__form">
+        <input class="footer-order-call__input" name="name" type="phone" placeholder="+7 (___) ___-__-__" />
+        <button class="footer-order-call__button">Отправить заявку</button>
+      </div>
+    </form>
+  </div>
+  <div>
+    <p class="footer-order-call__text mb-4">Или вы можете связаться с нами:</p>
+
+    <a class="footer-order-call__link mb-4" href="tel:+78001005354">+7 (800) 100-53-54</a><br />
+
+    <a class="footer-order-call__link" href="mailto:info@sonder.ru">info@sonder.ru</a>
+  </div>
+</div>
+</div>
+      <div class="footer__menu">
+        <ul class="menu-list footer__menu-a d-none d-lg-flex">
+          <li class="menu-list__title">Каталог продукции</li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Компрессоры и ремкомплекты </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Радиаторы и интеркуллеры </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Диски и барабаны </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Тормозные колодки и накладки </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Пневматические системы </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Амортизаторы кабины </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Амортизаторы подвески </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Датчики, краны и тормозные механизмы </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Ремкомплекты суппорта </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Прочие товары </a>
+          </li>
+        </ul>
+        <ul class="menu-list footer__menu-b d-none d-lg-flex">
+          <li class="menu-list__title">О нас</li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">О компании</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Характеристики и качество продукции</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Блог</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Где купить?</a>
+          </li>
+        </ul>
+
+        <div class="footer__accordion d-lg-none"><div class="accordion">
+  <div class="accordion__item">
+    <div class="accordion__wrapper">
+      <div class="accordion__title">Каталог продукции<span class="accordion__icon"></span></div>
+      <div class="accordion__content">
+        <ul class="list mt-5">
+          <li class="list__item"><a href="#">Компрессоры и ремкомплекты </a></li>
+          <li class="list__item"><a href="#">Радиаторы и интеркуллеры </a></li>
+          <li class="list__item"><a href="#">Диски и барабаны </a></li>
+          <li class="list__item"><a href="#">Тормозные колодки и накладки </a></li>
+          <li class="list__item"><a href="#">Пневматические системы </a></li>
+          <li class="list__item"><a href="#">Амортизаторы кабины </a></li>
+          <li class="list__item"><a href="#">Амортизаторы подвески </a></li>
+          <li class="list__item"><a href="#">Датчики, краны и тормозные механизмы </a></li>
+          <li class="list__item"><a href="#">Ремкомплекты суппорта </a></li>
+          <li class="list__item"><a href="#">Прочие товары</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion__item">
+    <div class="accordion__wrapper">
+      <div class="accordion__title">О нас<span class="accordion__icon"></span></div>
+      <div class="accordion__content">
+        <ul class="list mt-5">
+          <li class="list__item"><a href="/help/delivery">О компании</a></li>
+          <li class="list__item"><a href="/help/delivery">Характеристики и качество продукции</a></li>
+          <li class="list__item"><a href="/help/delivery">Блог</a></li>
+          <li class="list__item"><a href="/help/delivery">Где купить?</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        <ul class="footer__list footer__menu-c">
+          <li class="footer__item"><a href="#">Подбор</a></li>
+          <li class="footer__item"><a href="#">Бесплатный тест-драйв</a></li>
+          <li class="footer__item"><a href="#">Стать партнером</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2023 г. «SONDER». Публичная оферта</span>
+      <img class="footer__brand" src="assets/img/brand.b0d1063f.png" alt="" />
+      <span>Политика конфиденциальности</span>
+    </div>
+  </div>
+</footer>
+ <div class="overlay" onclick="onDrawer(false)"></div>
+ <div class="drawer">
+  <div class="drawer__wrapper">
+    <div class="drawer__close" onclick="onDrawer(false)">
+      <button class="button button--icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            clip-rule="evenodd"
+            d="M7.269 5.58a1.115 1.115 0 00-1.577 1.577l4.73 4.73-4.842 4.844a1.115 1.115 0 001.577 1.577L12 13.465l4.843 4.843a1.115 1.115 0 101.577-1.577l-4.843-4.843 4.73-4.731a1.115 1.115 0 10-1.576-1.577L12 10.31 7.269 5.58z"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer__content scroll-none"></div>
+  </div>
+</div>
+
+
+    <!-- block for specific page scripts -->
+    
+<!-- load specific page script -->
+<script src="assets/js/home.js"></script>
+
+  </body>
+</html>
