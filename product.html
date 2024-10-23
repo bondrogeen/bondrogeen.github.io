@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link href="assets/css/lightbox.min.css" rel="stylesheet" />
     <!-- <link rel="manifest" href="/site.webmanifest" /> -->
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
@@ -23,6 +24,7 @@
     </style>
     <link href="assets/css/index.css" rel="stylesheet" />
     <script src="assets/js/common.js" defer="defer"></script>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
     
 <!-- load specific page style -->
 <link href="assets/css/product.css" rel="stylesheet" />
@@ -34,7 +36,7 @@
   <div class="container">
     <div class="header__inner">
       <div class="header__logo">
-        <img src="assets/img/logo.cea8fa0c.png" alt="" />
+        <img src="assets/img/logo.58aeeaf7.png" alt="" />
       </div>
       <div class="header__search">
         <div class="header-search d-none d-xl-flex">
@@ -184,6 +186,7 @@
       </li>
       
     </ul>
+
     <button class="d-lg-none button button--text fs grey-base mb-6 fw-400" onclick="history.back()">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
         <path
@@ -198,6 +201,7 @@
       </svg>
       НАЗАД
     </button>
+
     <section class="page-product__main"><div class="product-main">
   <div class="product-main__wrapper">
     <div class="product-main__detail"><div class="product-detail">
@@ -300,7 +304,9 @@
     <li class="list-info__item">
       <div class="list-info__name">Применимость</div>
       <div class="list-info__dots"></div>
-      <div class="list-info__value fw-600 text-decoration-underline">12 автомобилей</div>
+      <div class="list-info__value fw-600 text-decoration-underline">
+        <a href="" onclick="onScroll(event,'#application')">12 автомобилей</a>
+      </div>
     </li>
   </ul>
 
@@ -354,6 +360,7 @@
   </div>
 </div>
 </section>
+
     <section class="page-product__banner"><div class="product-banner">
   <div class="product-banner__wrapper">
     <div class="product-banner__name">Смотри все амортизаторы <span class="product-banner__brand">SONDER</span> в каталоге</div>
@@ -375,7 +382,8 @@
   </div>
 </div>
 </section>
-    <section class="page-product__application"><div class="product-application">
+
+    <section id="application" class="page-product__application"><div class="product-application">
   <h3 class="product-application__title">Применимость</h3>
   <div class="product-application__text">Эта деталь подходит для следующих автомобилей:</div>
   <div class="product-application__list">
@@ -530,6 +538,7 @@
   </div>
 </div>
 </section>
+
     <section class="page-product__composition"><div class="product-composition">
   <h3 class="product-composition__title">Состав продукта:</h3>
   <div class="product-composition__list">
@@ -570,6 +579,7 @@
       </a>
     </div>
   </div>
+  <a class="card-composition__link" href="/product.html"></a>
 </div>
 </div>
     <div class="product-composition__item"><div class="card-composition">
@@ -609,6 +619,7 @@
       </a>
     </div>
   </div>
+  <a class="card-composition__link" href="/product.html"></a>
 </div>
 </div>
     <div class="product-composition__item"><div class="card-composition">
@@ -648,6 +659,7 @@
       </a>
     </div>
   </div>
+  <a class="card-composition__link" href="/product.html"></a>
 </div>
 </div>
     <div class="product-composition__item"><div class="card-composition">
@@ -687,6 +699,7 @@
       </a>
     </div>
   </div>
+  <a class="card-composition__link" href="/product.html"></a>
 </div>
 </div>
     <div class="product-composition__item"><div class="card-composition">
@@ -726,6 +739,7 @@
       </a>
     </div>
   </div>
+  <a class="card-composition__link" href="/product.html"></a>
 </div>
 </div>
     <div class="product-composition__item"><div class="card-composition">
@@ -765,11 +779,13 @@
       </a>
     </div>
   </div>
+  <a class="card-composition__link" href="/product.html"></a>
 </div>
 </div>
   </div>
 </div>
 </section>
+
     <section class="page-product__video"><div class="product-video">
   <div class="product-video__title">
     Видео обзор амортизатора прицепа <span class="product-video__brand">Premium Quality SONDER</span>
@@ -795,6 +811,7 @@
   </div>
 </div>
 </section>
+
     <section class="page-product__docs"><div class="product-docs">
   <div class="product-docs__title">Документы и сертификаты</div>
   <div class="product-docs__list">
@@ -945,6 +962,7 @@
   </div>
 </div>
 </section>
+
     <section class="page-product__analog"><div class="product-analog">
   <div class="product-analog__title"><span class="text-line">Аналоги</span> амортизатора прицепа Premium Quality SONDER</div>
   <div class="product-analog__list">
@@ -1115,6 +1133,7 @@
   </div>
 </div>
 </section>
+
     <section class="page-product__comment"><div class="product-comment">
   <div class="product-comment__wrapper">
     <div class="product-comment__left">
@@ -1224,16 +1243,43 @@
   </div>
   <div class="card-comment__text">Регулярно покупаю детали этого бренда. Хорошее соотношение цена- качество!</div>
   <div class="card-comment__images">
-    <img src="assets/img/banner_1.f4f3052a.png" alt="" />
-    <img src="assets/img/banner_2.4f7ade05.png" alt="" />
-    <img src="assets/img/banner_3.57223145.png" alt="" />
+    <div class="card-comment__image">
+      <a
+        href="https://s3-alpha-sig.figma.com/img/a160/810a/5760ff8c3ca35b8a482643eafb0c9d33?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hmx1GIv-8Z6dMzpjy1~iRc-s9AyWGviofymTuxSxtzuRw-U8~VoT4pNvXqq4xXY9VUdXMWmGIpJ5VBax5~WhMoXPSskE-VzAK-~s2kyLlACS1xUOCIARUYP81uujg8y~FQlkGqG6atR-B59yV5smkv4WhVejIcv9om2XLwYiT8ILjLwmIg6SfjXIrqpVJvNL5ptjIywwip~XYgNCOJpqOxVKwiSmUZ5y63skpbIv2XekeO~lYiKf9ZXKT48Hz3FikldoTVzyODU~A8~wq07mX7nsk6OPLhN0TedyHuXZ1G7Ub6HAqKziNunOCB1AyCFHvbMcFcI3kh6Kwu5qzSLbpw__"
+        data-lightbox="image-1"
+        data-title="My caption">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/a160/810a/5760ff8c3ca35b8a482643eafb0c9d33?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hmx1GIv-8Z6dMzpjy1~iRc-s9AyWGviofymTuxSxtzuRw-U8~VoT4pNvXqq4xXY9VUdXMWmGIpJ5VBax5~WhMoXPSskE-VzAK-~s2kyLlACS1xUOCIARUYP81uujg8y~FQlkGqG6atR-B59yV5smkv4WhVejIcv9om2XLwYiT8ILjLwmIg6SfjXIrqpVJvNL5ptjIywwip~XYgNCOJpqOxVKwiSmUZ5y63skpbIv2XekeO~lYiKf9ZXKT48Hz3FikldoTVzyODU~A8~wq07mX7nsk6OPLhN0TedyHuXZ1G7Ub6HAqKziNunOCB1AyCFHvbMcFcI3kh6Kwu5qzSLbpw__"
+          alt="" />
+      </a>
+    </div>
+    <div class="card-comment__image">
+      <a
+        href="https://img.freepik.com/free-photo/beautiful-kitten-with-colorful-clouds_23-2150752964.jpg"
+        data-lightbox="image-1"
+        data-title="My caption">
+        <img src="https://img.freepik.com/free-photo/beautiful-kitten-with-colorful-clouds_23-2150752964.jpg" alt="" />
+      </a>
+    </div>
+    <div class="card-comment__image">
+      <a
+        href="https://s3-alpha-sig.figma.com/img/dd76/f557/eaf115574df8711dd50331ee1c2bf4bd?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YgjGTL5GS9iiQOawfTP1~Dda~Nb2H4zKwoSjfHc9hz52LKsKHEU1vQFCidjo5RxjOScTcLGSWI1pGgjE7QhYI5RsM40OUWYcsq-A9NNoZan~nT4sRNXX1LfVVNpd1b67pyfKrQzg~2nQ1PXWiD-ToXx5GAFT7ZoEn1tvs4BSfY1VebGkYuGW1XSlb07-J3okKmL8ZQ-7ewujS3RVl6EE-MptOGBcmuUrguAMns9Lk6KIxyrKuHE9XXEVWCzkTTS4edeXi~n1356BxNzt~UUKL7siTAi6B04t3PudqT5E-~r~5lT2THqYK~M5TJZKq02NzlSp~xEFHWxIW4KLqpdZBw__"
+        data-lightbox="image-1"
+        data-title="My caption">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/dd76/f557/eaf115574df8711dd50331ee1c2bf4bd?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YgjGTL5GS9iiQOawfTP1~Dda~Nb2H4zKwoSjfHc9hz52LKsKHEU1vQFCidjo5RxjOScTcLGSWI1pGgjE7QhYI5RsM40OUWYcsq-A9NNoZan~nT4sRNXX1LfVVNpd1b67pyfKrQzg~2nQ1PXWiD-ToXx5GAFT7ZoEn1tvs4BSfY1VebGkYuGW1XSlb07-J3okKmL8ZQ-7ewujS3RVl6EE-MptOGBcmuUrguAMns9Lk6KIxyrKuHE9XXEVWCzkTTS4edeXi~n1356BxNzt~UUKL7siTAi6B04t3PudqT5E-~r~5lT2THqYK~M5TJZKq02NzlSp~xEFHWxIW4KLqpdZBw__"
+          alt="" />
+      </a>
+    </div>
   </div>
-  <div class="card-comment__buttons">
-    Отзыв был полезен?
-    <button class="card-comment__yes button button--text">Да</button>
-    <button class="card-comment__no button button--text">Нет</button>
+  <div class="card-comment__footer">
+    <div class="card-comment__buttons">
+      Отзыв был полезен?
+      <button class="card-comment__yes button button--text" onclick="onComment(event)">Да</button>
+      <button class="card-comment__no button button--text" onclick="onComment(event)">Нет</button>
+    </div>
+    <div class="card-comment__footer"><span class="mr-1">5</span> человек считает этот отзыв полезным</div>
   </div>
-  <div class="card-comment__footer">5 человек считает этот отзыв полезным</div>
 </div>
 </div>
       <div class="product-comment__item"><div class="card-comment">
@@ -1283,16 +1329,43 @@
   </div>
   <div class="card-comment__text">Регулярно покупаю детали этого бренда. Хорошее соотношение цена- качество!</div>
   <div class="card-comment__images">
-    <img src="assets/img/banner_1.f4f3052a.png" alt="" />
-    <img src="assets/img/banner_2.4f7ade05.png" alt="" />
-    <img src="assets/img/banner_3.57223145.png" alt="" />
+    <div class="card-comment__image">
+      <a
+        href="https://s3-alpha-sig.figma.com/img/a160/810a/5760ff8c3ca35b8a482643eafb0c9d33?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hmx1GIv-8Z6dMzpjy1~iRc-s9AyWGviofymTuxSxtzuRw-U8~VoT4pNvXqq4xXY9VUdXMWmGIpJ5VBax5~WhMoXPSskE-VzAK-~s2kyLlACS1xUOCIARUYP81uujg8y~FQlkGqG6atR-B59yV5smkv4WhVejIcv9om2XLwYiT8ILjLwmIg6SfjXIrqpVJvNL5ptjIywwip~XYgNCOJpqOxVKwiSmUZ5y63skpbIv2XekeO~lYiKf9ZXKT48Hz3FikldoTVzyODU~A8~wq07mX7nsk6OPLhN0TedyHuXZ1G7Ub6HAqKziNunOCB1AyCFHvbMcFcI3kh6Kwu5qzSLbpw__"
+        data-lightbox="image-1"
+        data-title="My caption">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/a160/810a/5760ff8c3ca35b8a482643eafb0c9d33?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hmx1GIv-8Z6dMzpjy1~iRc-s9AyWGviofymTuxSxtzuRw-U8~VoT4pNvXqq4xXY9VUdXMWmGIpJ5VBax5~WhMoXPSskE-VzAK-~s2kyLlACS1xUOCIARUYP81uujg8y~FQlkGqG6atR-B59yV5smkv4WhVejIcv9om2XLwYiT8ILjLwmIg6SfjXIrqpVJvNL5ptjIywwip~XYgNCOJpqOxVKwiSmUZ5y63skpbIv2XekeO~lYiKf9ZXKT48Hz3FikldoTVzyODU~A8~wq07mX7nsk6OPLhN0TedyHuXZ1G7Ub6HAqKziNunOCB1AyCFHvbMcFcI3kh6Kwu5qzSLbpw__"
+          alt="" />
+      </a>
+    </div>
+    <div class="card-comment__image">
+      <a
+        href="https://img.freepik.com/free-photo/beautiful-kitten-with-colorful-clouds_23-2150752964.jpg"
+        data-lightbox="image-1"
+        data-title="My caption">
+        <img src="https://img.freepik.com/free-photo/beautiful-kitten-with-colorful-clouds_23-2150752964.jpg" alt="" />
+      </a>
+    </div>
+    <div class="card-comment__image">
+      <a
+        href="https://s3-alpha-sig.figma.com/img/dd76/f557/eaf115574df8711dd50331ee1c2bf4bd?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YgjGTL5GS9iiQOawfTP1~Dda~Nb2H4zKwoSjfHc9hz52LKsKHEU1vQFCidjo5RxjOScTcLGSWI1pGgjE7QhYI5RsM40OUWYcsq-A9NNoZan~nT4sRNXX1LfVVNpd1b67pyfKrQzg~2nQ1PXWiD-ToXx5GAFT7ZoEn1tvs4BSfY1VebGkYuGW1XSlb07-J3okKmL8ZQ-7ewujS3RVl6EE-MptOGBcmuUrguAMns9Lk6KIxyrKuHE9XXEVWCzkTTS4edeXi~n1356BxNzt~UUKL7siTAi6B04t3PudqT5E-~r~5lT2THqYK~M5TJZKq02NzlSp~xEFHWxIW4KLqpdZBw__"
+        data-lightbox="image-1"
+        data-title="My caption">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/dd76/f557/eaf115574df8711dd50331ee1c2bf4bd?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YgjGTL5GS9iiQOawfTP1~Dda~Nb2H4zKwoSjfHc9hz52LKsKHEU1vQFCidjo5RxjOScTcLGSWI1pGgjE7QhYI5RsM40OUWYcsq-A9NNoZan~nT4sRNXX1LfVVNpd1b67pyfKrQzg~2nQ1PXWiD-ToXx5GAFT7ZoEn1tvs4BSfY1VebGkYuGW1XSlb07-J3okKmL8ZQ-7ewujS3RVl6EE-MptOGBcmuUrguAMns9Lk6KIxyrKuHE9XXEVWCzkTTS4edeXi~n1356BxNzt~UUKL7siTAi6B04t3PudqT5E-~r~5lT2THqYK~M5TJZKq02NzlSp~xEFHWxIW4KLqpdZBw__"
+          alt="" />
+      </a>
+    </div>
   </div>
-  <div class="card-comment__buttons">
-    Отзыв был полезен?
-    <button class="card-comment__yes button button--text">Да</button>
-    <button class="card-comment__no button button--text">Нет</button>
+  <div class="card-comment__footer">
+    <div class="card-comment__buttons">
+      Отзыв был полезен?
+      <button class="card-comment__yes button button--text" onclick="onComment(event)">Да</button>
+      <button class="card-comment__no button button--text" onclick="onComment(event)">Нет</button>
+    </div>
+    <div class="card-comment__footer"><span class="mr-1">5</span> человек считает этот отзыв полезным</div>
   </div>
-  <div class="card-comment__footer">5 человек считает этот отзыв полезным</div>
 </div>
 </div>
       <div class="product-comment__item"><div class="card-comment">
@@ -1342,16 +1415,43 @@
   </div>
   <div class="card-comment__text">Регулярно покупаю детали этого бренда. Хорошее соотношение цена- качество!</div>
   <div class="card-comment__images">
-    <img src="assets/img/banner_1.f4f3052a.png" alt="" />
-    <img src="assets/img/banner_2.4f7ade05.png" alt="" />
-    <img src="assets/img/banner_3.57223145.png" alt="" />
+    <div class="card-comment__image">
+      <a
+        href="https://s3-alpha-sig.figma.com/img/a160/810a/5760ff8c3ca35b8a482643eafb0c9d33?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hmx1GIv-8Z6dMzpjy1~iRc-s9AyWGviofymTuxSxtzuRw-U8~VoT4pNvXqq4xXY9VUdXMWmGIpJ5VBax5~WhMoXPSskE-VzAK-~s2kyLlACS1xUOCIARUYP81uujg8y~FQlkGqG6atR-B59yV5smkv4WhVejIcv9om2XLwYiT8ILjLwmIg6SfjXIrqpVJvNL5ptjIywwip~XYgNCOJpqOxVKwiSmUZ5y63skpbIv2XekeO~lYiKf9ZXKT48Hz3FikldoTVzyODU~A8~wq07mX7nsk6OPLhN0TedyHuXZ1G7Ub6HAqKziNunOCB1AyCFHvbMcFcI3kh6Kwu5qzSLbpw__"
+        data-lightbox="image-1"
+        data-title="My caption">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/a160/810a/5760ff8c3ca35b8a482643eafb0c9d33?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hmx1GIv-8Z6dMzpjy1~iRc-s9AyWGviofymTuxSxtzuRw-U8~VoT4pNvXqq4xXY9VUdXMWmGIpJ5VBax5~WhMoXPSskE-VzAK-~s2kyLlACS1xUOCIARUYP81uujg8y~FQlkGqG6atR-B59yV5smkv4WhVejIcv9om2XLwYiT8ILjLwmIg6SfjXIrqpVJvNL5ptjIywwip~XYgNCOJpqOxVKwiSmUZ5y63skpbIv2XekeO~lYiKf9ZXKT48Hz3FikldoTVzyODU~A8~wq07mX7nsk6OPLhN0TedyHuXZ1G7Ub6HAqKziNunOCB1AyCFHvbMcFcI3kh6Kwu5qzSLbpw__"
+          alt="" />
+      </a>
+    </div>
+    <div class="card-comment__image">
+      <a
+        href="https://img.freepik.com/free-photo/beautiful-kitten-with-colorful-clouds_23-2150752964.jpg"
+        data-lightbox="image-1"
+        data-title="My caption">
+        <img src="https://img.freepik.com/free-photo/beautiful-kitten-with-colorful-clouds_23-2150752964.jpg" alt="" />
+      </a>
+    </div>
+    <div class="card-comment__image">
+      <a
+        href="https://s3-alpha-sig.figma.com/img/dd76/f557/eaf115574df8711dd50331ee1c2bf4bd?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YgjGTL5GS9iiQOawfTP1~Dda~Nb2H4zKwoSjfHc9hz52LKsKHEU1vQFCidjo5RxjOScTcLGSWI1pGgjE7QhYI5RsM40OUWYcsq-A9NNoZan~nT4sRNXX1LfVVNpd1b67pyfKrQzg~2nQ1PXWiD-ToXx5GAFT7ZoEn1tvs4BSfY1VebGkYuGW1XSlb07-J3okKmL8ZQ-7ewujS3RVl6EE-MptOGBcmuUrguAMns9Lk6KIxyrKuHE9XXEVWCzkTTS4edeXi~n1356BxNzt~UUKL7siTAi6B04t3PudqT5E-~r~5lT2THqYK~M5TJZKq02NzlSp~xEFHWxIW4KLqpdZBw__"
+        data-lightbox="image-1"
+        data-title="My caption">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/dd76/f557/eaf115574df8711dd50331ee1c2bf4bd?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YgjGTL5GS9iiQOawfTP1~Dda~Nb2H4zKwoSjfHc9hz52LKsKHEU1vQFCidjo5RxjOScTcLGSWI1pGgjE7QhYI5RsM40OUWYcsq-A9NNoZan~nT4sRNXX1LfVVNpd1b67pyfKrQzg~2nQ1PXWiD-ToXx5GAFT7ZoEn1tvs4BSfY1VebGkYuGW1XSlb07-J3okKmL8ZQ-7ewujS3RVl6EE-MptOGBcmuUrguAMns9Lk6KIxyrKuHE9XXEVWCzkTTS4edeXi~n1356BxNzt~UUKL7siTAi6B04t3PudqT5E-~r~5lT2THqYK~M5TJZKq02NzlSp~xEFHWxIW4KLqpdZBw__"
+          alt="" />
+      </a>
+    </div>
   </div>
-  <div class="card-comment__buttons">
-    Отзыв был полезен?
-    <button class="card-comment__yes button button--text">Да</button>
-    <button class="card-comment__no button button--text">Нет</button>
+  <div class="card-comment__footer">
+    <div class="card-comment__buttons">
+      Отзыв был полезен?
+      <button class="card-comment__yes button button--text" onclick="onComment(event)">Да</button>
+      <button class="card-comment__no button button--text" onclick="onComment(event)">Нет</button>
+    </div>
+    <div class="card-comment__footer"><span class="mr-1">5</span> человек считает этот отзыв полезным</div>
   </div>
-  <div class="card-comment__footer">5 человек считает этот отзыв полезным</div>
 </div>
 </div>
       <div class="product-comment__item"><div class="card-comment">
@@ -1401,16 +1501,43 @@
   </div>
   <div class="card-comment__text">Регулярно покупаю детали этого бренда. Хорошее соотношение цена- качество!</div>
   <div class="card-comment__images">
-    <img src="assets/img/banner_1.f4f3052a.png" alt="" />
-    <img src="assets/img/banner_2.4f7ade05.png" alt="" />
-    <img src="assets/img/banner_3.57223145.png" alt="" />
+    <div class="card-comment__image">
+      <a
+        href="https://s3-alpha-sig.figma.com/img/a160/810a/5760ff8c3ca35b8a482643eafb0c9d33?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hmx1GIv-8Z6dMzpjy1~iRc-s9AyWGviofymTuxSxtzuRw-U8~VoT4pNvXqq4xXY9VUdXMWmGIpJ5VBax5~WhMoXPSskE-VzAK-~s2kyLlACS1xUOCIARUYP81uujg8y~FQlkGqG6atR-B59yV5smkv4WhVejIcv9om2XLwYiT8ILjLwmIg6SfjXIrqpVJvNL5ptjIywwip~XYgNCOJpqOxVKwiSmUZ5y63skpbIv2XekeO~lYiKf9ZXKT48Hz3FikldoTVzyODU~A8~wq07mX7nsk6OPLhN0TedyHuXZ1G7Ub6HAqKziNunOCB1AyCFHvbMcFcI3kh6Kwu5qzSLbpw__"
+        data-lightbox="image-1"
+        data-title="My caption">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/a160/810a/5760ff8c3ca35b8a482643eafb0c9d33?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hmx1GIv-8Z6dMzpjy1~iRc-s9AyWGviofymTuxSxtzuRw-U8~VoT4pNvXqq4xXY9VUdXMWmGIpJ5VBax5~WhMoXPSskE-VzAK-~s2kyLlACS1xUOCIARUYP81uujg8y~FQlkGqG6atR-B59yV5smkv4WhVejIcv9om2XLwYiT8ILjLwmIg6SfjXIrqpVJvNL5ptjIywwip~XYgNCOJpqOxVKwiSmUZ5y63skpbIv2XekeO~lYiKf9ZXKT48Hz3FikldoTVzyODU~A8~wq07mX7nsk6OPLhN0TedyHuXZ1G7Ub6HAqKziNunOCB1AyCFHvbMcFcI3kh6Kwu5qzSLbpw__"
+          alt="" />
+      </a>
+    </div>
+    <div class="card-comment__image">
+      <a
+        href="https://img.freepik.com/free-photo/beautiful-kitten-with-colorful-clouds_23-2150752964.jpg"
+        data-lightbox="image-1"
+        data-title="My caption">
+        <img src="https://img.freepik.com/free-photo/beautiful-kitten-with-colorful-clouds_23-2150752964.jpg" alt="" />
+      </a>
+    </div>
+    <div class="card-comment__image">
+      <a
+        href="https://s3-alpha-sig.figma.com/img/dd76/f557/eaf115574df8711dd50331ee1c2bf4bd?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YgjGTL5GS9iiQOawfTP1~Dda~Nb2H4zKwoSjfHc9hz52LKsKHEU1vQFCidjo5RxjOScTcLGSWI1pGgjE7QhYI5RsM40OUWYcsq-A9NNoZan~nT4sRNXX1LfVVNpd1b67pyfKrQzg~2nQ1PXWiD-ToXx5GAFT7ZoEn1tvs4BSfY1VebGkYuGW1XSlb07-J3okKmL8ZQ-7ewujS3RVl6EE-MptOGBcmuUrguAMns9Lk6KIxyrKuHE9XXEVWCzkTTS4edeXi~n1356BxNzt~UUKL7siTAi6B04t3PudqT5E-~r~5lT2THqYK~M5TJZKq02NzlSp~xEFHWxIW4KLqpdZBw__"
+        data-lightbox="image-1"
+        data-title="My caption">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/dd76/f557/eaf115574df8711dd50331ee1c2bf4bd?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YgjGTL5GS9iiQOawfTP1~Dda~Nb2H4zKwoSjfHc9hz52LKsKHEU1vQFCidjo5RxjOScTcLGSWI1pGgjE7QhYI5RsM40OUWYcsq-A9NNoZan~nT4sRNXX1LfVVNpd1b67pyfKrQzg~2nQ1PXWiD-ToXx5GAFT7ZoEn1tvs4BSfY1VebGkYuGW1XSlb07-J3okKmL8ZQ-7ewujS3RVl6EE-MptOGBcmuUrguAMns9Lk6KIxyrKuHE9XXEVWCzkTTS4edeXi~n1356BxNzt~UUKL7siTAi6B04t3PudqT5E-~r~5lT2THqYK~M5TJZKq02NzlSp~xEFHWxIW4KLqpdZBw__"
+          alt="" />
+      </a>
+    </div>
   </div>
-  <div class="card-comment__buttons">
-    Отзыв был полезен?
-    <button class="card-comment__yes button button--text">Да</button>
-    <button class="card-comment__no button button--text">Нет</button>
+  <div class="card-comment__footer">
+    <div class="card-comment__buttons">
+      Отзыв был полезен?
+      <button class="card-comment__yes button button--text" onclick="onComment(event)">Да</button>
+      <button class="card-comment__no button button--text" onclick="onComment(event)">Нет</button>
+    </div>
+    <div class="card-comment__footer"><span class="mr-1">5</span> человек считает этот отзыв полезным</div>
   </div>
-  <div class="card-comment__footer">5 человек считает этот отзыв полезным</div>
 </div>
 </div>
       <div>
@@ -1425,10 +1552,11 @@
   </div>
 </div>
 </section>
+
     <section class="page-product__blog"><div class="product-blog">
   <div class="product-blog__head">
     <h2 class="product-blog__title">Вам может быть <span class="text-line">интересно</span></h2>
-    <a class="product-blog__link d-none d-md-flex" href="/blog/">
+    <a class="product-blog__link d-none d-lg-flex" href="/blog/">
       <span>Смотреть все статьи</span>
       <svg width="16" height="17" viewBox="0 0 16 17" fill="none">
         <path
@@ -1461,7 +1589,7 @@
     <span>27 июля 2023</span>
   </div>
   <div class="card-blog__name">Советы эксперта: как правильно подбирать амортизатор прицепа</div>
-  <a class="card-blog__link" href="/blog/">
+  <a class="card-blog__button" href="/blog/">
     <span>Читать</span>
     <svg width="16" height="17" viewBox="0 0 16 17" fill="none">
       <path
@@ -1491,6 +1619,8 @@
   <div class="card-blog__image">
     <img src="assets/img/banner_1.f4f3052a.png" alt="" />
   </div>
+
+  <a class="card-blog__link" href="/blog/"></a>
 </div>
 </div>
     <div class="product-blog__item"><div class="card-blog">
@@ -1498,7 +1628,7 @@
     <span>27 июля 2023</span>
   </div>
   <div class="card-blog__name">Советы эксперта: как правильно подбирать амортизатор прицепа</div>
-  <a class="card-blog__link" href="/blog/">
+  <a class="card-blog__button" href="/blog/">
     <span>Читать</span>
     <svg width="16" height="17" viewBox="0 0 16 17" fill="none">
       <path
@@ -1528,6 +1658,8 @@
   <div class="card-blog__image">
     <img src="assets/img/banner_1.f4f3052a.png" alt="" />
   </div>
+
+  <a class="card-blog__link" href="/blog/"></a>
 </div>
 </div>
     <div class="product-blog__item"><div class="card-blog">
@@ -1535,7 +1667,7 @@
     <span>27 июля 2023</span>
   </div>
   <div class="card-blog__name">Советы эксперта: как правильно подбирать амортизатор прицепа</div>
-  <a class="card-blog__link" href="/blog/">
+  <a class="card-blog__button" href="/blog/">
     <span>Читать</span>
     <svg width="16" height="17" viewBox="0 0 16 17" fill="none">
       <path
@@ -1565,10 +1697,12 @@
   <div class="card-blog__image">
     <img src="assets/img/banner_1.f4f3052a.png" alt="" />
   </div>
+
+  <a class="card-blog__link" href="/blog/"></a>
 </div>
 </div>
   </div>
-  <div class="d-md-none mt-4">
+  <div class="d-lg-none mt-4">
     <a class="product-blog__link" href="/blog/">
       <span>Смотреть все статьи</span>
       <svg width="16" height="17" viewBox="0 0 16 17" fill="none">
@@ -1720,7 +1854,7 @@
     </div>
     <div class="footer__bottom">
       <span>© 2023 г. «SONDER». Публичная оферта</span>
-      <img class="footer__brand" src="assets/img/brand.b0d1063f.png" alt="" />
+      <img class="footer__brand" src="assets/img/brand.151fbb93.png" alt="" />
       <span>Политика конфиденциальности</span>
     </div>
   </div>

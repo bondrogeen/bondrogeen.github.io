@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link href="assets/css/lightbox.min.css" rel="stylesheet" />
     <!-- <link rel="manifest" href="/site.webmanifest" /> -->
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
@@ -23,6 +24,7 @@
     </style>
     <link href="assets/css/index.css" rel="stylesheet" />
     <script src="assets/js/common.js" defer="defer"></script>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
     
 <link href="assets/css/catalog.css" rel="stylesheet" />
 
@@ -33,7 +35,7 @@
   <div class="container">
     <div class="header__inner">
       <div class="header__logo">
-        <img src="assets/img/logo.cea8fa0c.png" alt="" />
+        <img src="assets/img/logo.58aeeaf7.png" alt="" />
       </div>
       <div class="header__search">
         <div class="header-search d-none d-xl-flex">
@@ -150,7 +152,7 @@
         <a itemprop="item" href="/" class="breadcrumbs__link">
           <span itemprop="name">Главная</span>
         </a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="2" viewBox="0 0 2 2" fill="none">
+        <svg width="2" height="2" viewBox="0 0 2 2" fill="none">
           <rect width="2" height="2" fill="#8C959C" />
         </svg>
       </li>
@@ -159,7 +161,7 @@
         <a itemprop="item" href="/" class="breadcrumbs__link">
           <span itemprop="name">Каталог</span>
         </a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="2" viewBox="0 0 2 2" fill="none">
+        <svg width="2" height="2" viewBox="0 0 2 2" fill="none">
           <rect width="2" height="2" fill="#8C959C" />
         </svg>
       </li>
@@ -168,12 +170,27 @@
         <a itemprop="item" href="/" class="breadcrumbs__link">
           <span itemprop="name">Амортизаторы</span>
         </a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="2" viewBox="0 0 2 2" fill="none">
+        <svg width="2" height="2" viewBox="0 0 2 2" fill="none">
           <rect width="2" height="2" fill="#8C959C" />
         </svg>
       </li>
       
     </ul>
+
+    <button class="d-md-none button button--text fs grey-base mb-6 fw-400 breadcrumbs__link" onclick="history.back()">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path
+          d="M6.37988 12.0466L2.33322 7.99996L6.37988 3.9533"
+          stroke="#8C959C"
+          stroke-width="1.5"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M8.65991 8L2.44658 8" stroke="#8C959C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M13.6667 8L11.3534 8" stroke="#8C959C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      НАЗАД
+    </button>
 
     <div class="page-catalog__head">
       <div><div class="catalog-shock">
@@ -258,7 +275,6 @@
     <hr class="mb-8" />
 
     <div class="page-catalog__list"> <div class="product">
-  <a class="product__link" href="/product.html" itemprop="url"> </a>
   <div class="product__inner">
     <div class="product__image">
       <picture>
@@ -299,9 +315,9 @@
       </a>
     </div>
   </div>
+  <a class="product__link" href="/product.html" itemprop="url"> </a>
 </div>
   <div class="product">
-  <a class="product__link" href="/product.html" itemprop="url"> </a>
   <div class="product__inner">
     <div class="product__image">
       <picture>
@@ -342,9 +358,9 @@
       </a>
     </div>
   </div>
+  <a class="product__link" href="/product.html" itemprop="url"> </a>
 </div>
   <div class="product">
-  <a class="product__link" href="/product.html" itemprop="url"> </a>
   <div class="product__inner">
     <div class="product__image">
       <picture>
@@ -385,9 +401,9 @@
       </a>
     </div>
   </div>
+  <a class="product__link" href="/product.html" itemprop="url"> </a>
 </div>
   <div class="product">
-  <a class="product__link" href="/product.html" itemprop="url"> </a>
   <div class="product__inner">
     <div class="product__image">
       <picture>
@@ -446,9 +462,9 @@
       </a>
     </div>
   </div>
+  <a class="product__link" href="/product.html" itemprop="url"> </a>
 </div>
   <div class="product">
-  <a class="product__link" href="/product.html" itemprop="url"> </a>
   <div class="product__inner">
     <div class="product__image">
       <picture>
@@ -489,9 +505,9 @@
       </a>
     </div>
   </div>
+  <a class="product__link" href="/product.html" itemprop="url"> </a>
 </div>
   <div class="product">
-  <a class="product__link" href="/product.html" itemprop="url"> </a>
   <div class="product__inner">
     <div class="product__image">
       <picture>
@@ -550,9 +566,9 @@
       </a>
     </div>
   </div>
+  <a class="product__link" href="/product.html" itemprop="url"> </a>
 </div>
   <div class="product">
-  <a class="product__link" href="/product.html" itemprop="url"> </a>
   <div class="product__inner">
     <div class="product__image">
       <picture>
@@ -593,9 +609,9 @@
       </a>
     </div>
   </div>
+  <a class="product__link" href="/product.html" itemprop="url"> </a>
 </div>
   <div class="product">
-  <a class="product__link" href="/product.html" itemprop="url"> </a>
   <div class="product__inner">
     <div class="product__image">
       <picture>
@@ -636,6 +652,7 @@
       </a>
     </div>
   </div>
+  <a class="product__link" href="/product.html" itemprop="url"> </a>
 </div>
  </div>
 
@@ -800,7 +817,7 @@
     </div>
     <div class="footer__bottom">
       <span>© 2023 г. «SONDER». Публичная оферта</span>
-      <img class="footer__brand" src="assets/img/brand.b0d1063f.png" alt="" />
+      <img class="footer__brand" src="assets/img/brand.151fbb93.png" alt="" />
       <span>Политика конфиденциальности</span>
     </div>
   </div>
@@ -824,7 +841,6 @@
 
     <!-- block for specific page scripts -->
     
-<script src="https://cdn.jsdelivr.net/npm/mm-jsr/build/index.min.js"></script>
 <script src="assets/js/catalog.1.js"></script>
 
   </body>
