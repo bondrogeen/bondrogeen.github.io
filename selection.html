@@ -390,39 +390,50 @@
 
     <p class="page-selection__info">Подберите запчасти самостоятельно по каталогу или оставьте заявку на подбор по VIN</p>
 
-    <section class="page-selection__help-and-partner">
-      <div class="home-help">
-  <div class="home-help__title">Нужна помощь в подборе запчастей?</div>
-  <div class="home-help__description">Оставьте заявку на обратный звонок и мы перезвоним Вам в ближайшее время</div>
+    <section class="page-selection__catalog-and-vin">
+      <div class="selection-catalog">
+  <div class="selection-catalog__title">Нужна помощь в подборе запчастей?</div>
+  <div class="selection-catalog__description">Оставьте заявку на обратный звонок и мы перезвоним Вам в ближайшее время</div>
+</div>
+ 
+      <div class="selection-vin">
+  <div class="selection-vin__inner">
+    <div class="selection-vin__wrapper">
+      <div>
+        <h4 class="selection-vin__title">Подбор <span class="app-black">по VIN</span></h4>
+        <p class="selection-vin__description">Заполните VIN номер Вашего автомобиля, телефон и нужную запчасть, мы подберем и перезвоним вам.</p>
 
-  <form class="home-help__form" action="/submit/help" method="post" onsubmit="onSubmitFeedback(event)">
-    <div class="text-field text-field--bold text-field--white">
-      <input name="name" type="text" class="text-field__input" placeholder="Ваше имя..." />
-    </div>
-    <div class="text-field text-field--bold text-field--white">
-      <input name="phone" type="phone" class="text-field__input" placeholder="+7 (___) ___ __ __" />
-    </div>
-    <div class="textarea-field textarea-field--white">
-      <textarea name="comment" type="text" class="textarea-field__input" placeholder="Напишите какие запчасти вы ищите или ваш вопрос..."></textarea>
-    </div>
-    <div class="home-help__footer">
-      <button class="home-help__button button button--black">Оставить заявку</button>
-      <div class="home-help__pol">
-        Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a>
+        <form class="" action="/submit/feedback" method="post" onsubmit="onSubmitFeedback(event)">
+          <div class="selection-vin__form">
+            <div class="text-field text-field--bold">
+              <input name="name" type="text" class="text-field__input" placeholder="Ваше имя..." />
+            </div>
+            <div class="text-field text-field--bold">
+              <input name="phone" type="phone" class="text-field__input" placeholder="+7 (___) ___ __ __" />
+            </div>
+            <div class="text-field text-field--bold">
+              <input name="phone" type="text" class="text-field__input" placeholder="VIN код..." />
+            </div>
+            <div class="text-field text-field--bold">
+              <input name="phone" type="text" class="text-field__input" placeholder="Наименование запчасти..." />
+            </div>
+          </div>
+
+          <div class="selection-vin__footer">
+            <button class="selection-vin__button button button--black">Оставить заявку</button>
+
+            <div class="selection-vin__pol">
+              Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с
+              <a href="#">политикой конфиденциальности</a>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
-  </form>
-</div>
- <div class="home-partner">
-  <div class="home-partner__title">Стань партнером SONDER</div>
-  <div class="home-partner__description">Если Вы заинтересованы в сотрудничестве, узнайте больше в разделе “Стать партнером”</div>
-
-  <button class="home-partner__button button button--black px-8">Подробнее о сотрудничестве</button>
-
-  <img class="home-partner__truck home-partner__truck--one" src="src/assets/images/home/partner-truck1.png" alt="" />
-  <img class="home-partner__truck home-partner__truck--two" src="src/assets/images/home/partner-truck2.png" alt="" />
-
-  <div class="home-partner__overlay"></div>
+    <div class="selection-vin__image">
+      <img src="src/assets/images/feedback_1.png" alt="" />
+    </div>
+  </div>
 </div>
 
     </section>
@@ -1018,6 +1029,54 @@
       </p>
     </div>
   </form>
+</div>
+</div>
+          <div class="dialog__item" data-search><div class="dialog-search">
+  <div class="dialog-search__hr"></div>
+  <div class="dialog-search__wrapper">
+    <div class="card-select">
+  <div class="card-select__image">
+    <img src="src/assets/images/search/image 9.png" alt="" />
+  </div>
+  <div class="card-select__wrapper">
+    <div class="card-select__info">
+      <div class="card-select__name">NTP</div>
+
+      <div class="card-select__article">Артикул: 090010001</div>
+    </div>
+    <div class="card-select__description">Амортизатор прицепа Quality</div>
+  </div>
+</div>
+ 
+    <div class="card-select">
+  <div class="card-select__image">
+    <img src="src/assets/images/search/image 9.png" alt="" />
+  </div>
+  <div class="card-select__wrapper">
+    <div class="card-select__info">
+      <div class="card-select__name">NTP</div>
+
+      <div class="card-select__article">Артикул: 090010001</div>
+    </div>
+    <div class="card-select__description">Амортизатор прицепа Quality</div>
+  </div>
+</div>
+ 
+    <div class="card-select">
+  <div class="card-select__image">
+    <img src="src/assets/images/search/image 9.png" alt="" />
+  </div>
+  <div class="card-select__wrapper">
+    <div class="card-select__info">
+      <div class="card-select__name">NTP</div>
+
+      <div class="card-select__article">Артикул: 090010001</div>
+    </div>
+    <div class="card-select__description">Амортизатор прицепа Quality</div>
+  </div>
+</div>
+
+  </div>
 </div>
 </div>
         </div>
